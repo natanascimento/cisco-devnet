@@ -1,6 +1,6 @@
 import os 
 
-from flask import Flask
+from flask import Flask, render_template
 
 def create_app(test_config=None):
     #criando e configurando o app 
@@ -21,23 +21,20 @@ def create_app(test_config=None):
     except OSError:
         pass
     
-    #Conexão com o DB
-    from . import db
-    db.init_app(app)
-
-    return app 
-
-    #Registro / Autenticação 
-    from . import auth
-    app.register_blueprint(auth.bp)
-    
-    return app 
-    
     #Rodando o app
     @app.route('/')
     @app.route('/hello')
 
     def hello():
         return 'Hello World!'
-    
     return app
+
+    #Conexão com o DB
+    from . import db
+    db.init_app(app)
+    return app 
+
+    #Registro / Autenticação
+    from . import auth
+    app.register_blueprint(auth.bp)
+    return app 

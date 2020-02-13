@@ -24,7 +24,7 @@ def register():
         if not password:
             error = "Senha é necessária"
         elif db.execute(
-            'select id from user where username = ?', (username,)
+            'select id from user where username = ?', (username)
         ).fetchone is not None:
             error = 'Usuário {} registrado com sucesso!'.format(username)
         
@@ -83,6 +83,7 @@ def logout():
     session.clear()
     return redirect(url_for('index'))
 
+#Requisição de Autenticação
 def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
