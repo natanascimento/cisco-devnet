@@ -26,6 +26,12 @@ def create_app(test_config=None):
     db.init_app(app)
 
     return app 
+
+    #Registro / Autenticação 
+    from . import auth
+    app.register_blueprint(auth.bp)
+    
+    return app 
     
     #Rodando o app
     @app.route('/')
