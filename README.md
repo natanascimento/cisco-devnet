@@ -8,15 +8,12 @@
 
 ---
 
-### Pré-requisitos
+### Meraki
 
-Inicialmente será necessário realizar a instalação do Flask (Framework de WebDevelopment), para implementar a integração dos dados.
+Análise de processos Windows 
 
-```
-pip3 install flask
-```
+    Determinar um processo windows, e apartir disso, verificar se o mesmo está UP ou DOWN
 
-### Projeto
+### Webex
 
-Aplicação para controle de inventário utilizando QR Code
-
+Gerenciamento de salas Webex, usando command line 
