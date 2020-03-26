@@ -18,8 +18,11 @@ class checkProc:
         for proc in ps.process_iter():
             self.info = proc.as_dict(attrs=['name', 'status'])
 
-            #Setar o dicionario em lowercase
-            #self.info = {k.lower(): v.lower() for k, v in self.info.items()}
+            #Setar lowercase para os processos
+            try:
+                self.info = {k.lower(): v.lower() for k, v in self.info.items()}
+            except:
+                pass
 
             #Analisando processos
             for akey in self.info.keys():
