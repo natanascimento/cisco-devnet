@@ -10,10 +10,20 @@
 
 ### Meraki
 
-Análise de processos Windows 
+MV Sense
 
-    Determinar um processo windows, e apartir disso, verificar se o mesmo está UP ou DOWN
+    Data Analysis for Meraki Camera (MV-12)
+´´´
+    Live Data (Live)
+    Recent Data (Past 1 minute)
+    Overview Data (Past 1 hour)
+´´´
+
+Process Analysis Windows
+
+    Determine a windows process, and from there, check if it is UP or DOWN
 
 ### Webex
 
-Gerenciamento de salas Webex, usando command line 
+    Using command line for management of Webex rooms
+
