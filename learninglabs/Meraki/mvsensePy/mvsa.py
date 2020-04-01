@@ -81,7 +81,7 @@ class mv_sense:
         except APIException as e: 
             print(e)
         
-        while self.result['zones']['0']['person'] != 0:
+        while self.result['zones']['0']['person'] == 0:
 
             #Cronômetro
             end_time = time.time() + 60
@@ -96,7 +96,7 @@ class mv_sense:
                     print (self.result['zones']['0']['person'])
                     break
 
-            if self.result['zones']['0']['person'] == 0:
+            if self.result['zones']['0']['person'] != 0:
                 break
 
     def overviewMvSense(self):
