@@ -10,14 +10,15 @@
 
 ### Meraki
 
+    pip install meraki-sdk==1.5.0
+
 MV Sense
 
     Data Analysis for Meraki Camera (MV-12)
-´´´
+    
     Live Data (Live)
     Recent Data (Past 1 minute)
     Overview Data (Past 1 hour)
-´´´
 
 Process Analysis Windows
 
