@@ -56,3 +56,19 @@ Preparation to Cisco DevNet Associate Exam
     - Utilize Bash commands (file management, directory navigation, and environmental variables)
     - Identify the principles of DevOps practices
 
+- Infrastructure and Automation
+    - Describe the value of model driven programmability for infrastructure automation
+    - Compare controller-level to device-level management
+    - Describe the use and roles of network simulation and test tools (such as VIRL and pyATS)
+    - Describe the components and benefits of CI/CD pipeline in infrastructure automation
+    - Describe principles of infrastructure as code
+    - Describe the capabilities of automation tools such as Ansible, Puppet, Chef, and Cisco NSO
+    - Identify the workflow being automated by a Python script that uses Cisco APIs including ACI, Meraki, Cisco DNA Center, or RESTCONF
+    - Identify the workflow being automated by an Ansible playbook (management packages, user management related to services, basic service configuration, and start/stop)
+    - Identify the workflow being automated by a bash script (such as file management, app install, user management, directory navigation)
+    - Interpret the results of a RESTCONF or NETCONF query
+    - Interpret basic YANG models
+    - Interpret a unified diff
+    - Describe the principles and benefits of a code review process
+    - Interpret sequence diagram that includes API calls
+
