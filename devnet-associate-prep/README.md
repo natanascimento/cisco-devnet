@@ -39,3 +39,20 @@ Preparation to Cisco DevNet Associate Exam
         - Manage spaces, participants, and messages in Webex Teams
         - Obtain a list of clients / hosts seen on a network using Meraki or Cisco DNA Center
 
+- Application Deployment and Security
+    - Describe benefits of edge computing
+    - Identify attributes of different application deployment models (private cloud, public cloud, hybrid cloud, and edge)
+    - Identify the attributes of these application deployment types
+        - Virtual machines
+        - Bare metal
+        - Containers
+    - Describe components for a CI/CD pipeline in application deployments
+    - Construct a Python unit test
+    - Interpret contents of a Dockerfile
+    - Utilize Docker images in local developer environment
+    - Identify application security issues related to secret protection, encryption (storage and transport), and data handling
+    - Explain how firewall, DNS, load balancers, and reverse proxy in application deployment
+    - Describe top OWASP threats (such as XSS, SQL injections, and CSRF)
+    - Utilize Bash commands (file management, directory navigation, and environmental variables)
+    - Identify the principles of DevOps practices
+
