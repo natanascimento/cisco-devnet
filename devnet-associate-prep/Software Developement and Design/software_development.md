@@ -24,3 +24,26 @@
 </root>
 ```
 
+## JSON
+- Wrapped in { }
+- Lists use []
+- List of dictionaries
+- Data Type: string, int and boolean atributes
+- Comma-separated dicts
+```
+{
+    "customer_list":[
+        {
+            "name":"Natan Nascimento",
+            "idade":21,
+            "is_happy": true
+        },
+        {
+            "name":"Irineu",
+            "idade":35,
+            "is_happy": false
+        }
+    ]
+}
+```
+
