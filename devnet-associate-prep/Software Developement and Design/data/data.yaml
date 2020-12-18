@@ -1,8 +1,8 @@
 #YAML is fun!
 customer_list:
-        - name:"Natan Nascimento"
-        idade:21
-        is_happy: true
-        - name:"Irineu"
-        idade:35
-        is_happy: false
+        - name: "Natan Nascimento"
+          idade: 21
+          is_happy: true
+        - name: "Irineu"
+          idade: 35
+          is_happy: false
