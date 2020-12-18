@@ -26,7 +26,7 @@
 
 ## JSON
 - Wrapped in { }
-- Lists use []
+- Lists use [ ]
 - List of dictionaries
 - Data Type: string, int and boolean atributes
 - Comma-separated dicts
