@@ -1,17 +1,22 @@
 import json
 import os
 from os import listdir
+from os import path
 from os.path import isfile, join
 
 class processing_data:
-    def __init__(self,path):
-        self.path = path
+    def __init__(self):
         self.filepath = self.getFiles()
+     
+    def verifying_path(self, path):
+        if os.path.isdir(self.path):
+            self.path = path
+            self.getFiles(self.path)
     
-    def getFiles(self):
-        files = [f for f in listdir(self.path) if isfile(join(self.path, f))]
+    def getFiles(self, path):
+        files = [f for f in listdir(path) if isfile(join(path, f))]
         for file in files:
-            self.filepath = os.path.join(self.path, file)
+            self.filepath = os.path.join(path, file)
             return self.filepath
             
     def getJson(self):
@@ -23,7 +28,7 @@ class processing_data:
 
 if __name__ == "__main__":
     mypath = "devnet-associate-prep\\Software Developement and Design\\data"
-    main = processing_data(mypath)
-    main.getJson()
+    main = processing_data()
+    main.verifying_path(mypath)
 
 
