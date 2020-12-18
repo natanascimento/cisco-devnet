@@ -47,3 +47,19 @@
 }
 ```
 
+## YAML
+- Supports comments using hash symbol (#)
+- List of dictionaries again
+- Dash indicates list element
+- Quotes only needed if ":" exists
+- Optional ending of three periods
+```
+#YAML is fun!
+customer_list:
+        - name:"Natan Nascimento"
+        idade:21
+        is_happy: true
+        - name:"Irineu"
+        idade:35
+        is_happy: false
+```
