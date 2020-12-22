@@ -1,0 +1,12 @@
+<root>
+    <customer_list type="private_customer">
+        <name>Natan Nascimento</name>
+        <idade>21</idade>
+        <is_happy>true</is_happy>
+    </customer_list>
+    <customer_list type="public_customer">
+        <name>Irineu</name>
+        <idade>35</idade>
+        <is_happy>false</is_happy>
+    </customer_list>
+</root>
