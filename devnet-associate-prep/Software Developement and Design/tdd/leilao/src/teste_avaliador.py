@@ -21,8 +21,13 @@ class TestAvaliador(TestCase):
         menor_valor_esperado = 100
         maior_valor_esperado = 150
         
-        self.assertEqual(menor_valor_esperado, avaliador.menor_lance)
-        self.assertEqual(maior_valor_esperado, avaliador.maior_lance)
+        teste_menor_valor = self.assertEqual(menor_valor_esperado, avaliador.menor_lance)
+        teste_maior_valor = self.assertEqual(maior_valor_esperado, avaliador.maior_lance)
+        
+        if teste_maior_valor == None and teste_maior_valor == None:
+            print("OK!")
+        else:
+            print ("{} \n {}".format(teste_menor_valor, teste_maior_valor))
         
 if __name__ == '__main__':
     main = TestAvaliador()
