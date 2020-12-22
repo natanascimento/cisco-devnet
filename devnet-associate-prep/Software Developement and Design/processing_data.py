@@ -25,7 +25,6 @@ class processing_data:
                 filepath_xml = os.path.join(self.path, file)
                 print(filepath_xml)
                 self.getXMLData(filepath_xml)
-
             
     def getJsonData(self,filepath):
         #Open the specified database file for reading and perform loading
