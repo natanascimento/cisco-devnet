@@ -24,7 +24,7 @@ O REST delimita algumas obrigações nessas transferências de dados.
 
 Resources seria então: Uma entidade ou um objeto.
 
-### 6 NECESSIDADES (constraints) para ser RESTful
+### 6 NECESSIDADES (constraints) para ser RESTful:
 
 - _Uniform Interface_: Manter uma uniformidade, uma constância, um padrão na construção da interface. Nossa API precisa ser coerente para quem vai consumi-lá. Precisa fazer sentido para o cliente e não ser confusa. Logo, coisas como: o uso correto dos verbos HTTP; endpoints coerentes (todos os endpoints no plural, por exemplo); usar somente uma linguagem de comunicação (json) e não várias ao mesmo tempo; sempre enviar respostas aos clientes; são exemplos de aplicação de uma interface uniforme.
 
@@ -38,3 +38,34 @@ Resources seria então: Uma entidade ou um objeto.
 
 - _Code on demand (optional)_: Dá a possibilidade da nossa aplicação pegar códigos, como o javascript, por exemplo, e executar no cliente.
 
+## RESTFUL
+
+RESTful, é a aplicação dos padrões REST.
+
+## BOAS PRÁTICAS
+
+- Utilizar verbos HTTP para nossas requisições.
+- Utilizar plural ou singular na criação dos endpoints? _NÃO IMPORTA!_ use um padrão!!
+- Não deixar barra no final do endpoint
+- Nunca deixe o cliente sem resposta!
+
+### VERBOS HTTP
+
+- GET: Receber dados de um Resource.
+- POST: Enviar dados ou informações para serem processados por um Resource.
+- PUT: Atualizar dados de um Resource.
+- DELETE: Deletar um Resource
+
+### STATUS DAS RESPOSTAS
+
+- 1xx: Informação
+- 2xx: Sucesso
+  - 200: OK
+  - 201: CREATED
+  - 204: Não tem conteúdo PUT POST DELETE
+- 3xx: Redirection
+- 4xx: Client Error
+  - 400: Bad Request
+  - 404: Not Found!
+- 5xx: Server Error
+  500: Internal Server Error
