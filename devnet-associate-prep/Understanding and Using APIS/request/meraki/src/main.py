@@ -1,7 +1,6 @@
 import requests
 import os 
 
-#d7513b1e346e7e6be161548f93ef2d6939049f76
 class processMerakiData:
     def __init__(self):
         self._meraki_api_key = os.getenv('MERAKI_API_KEY')
