@@ -1,0 +1,73 @@
+# Application Deployment and Security
+
+# Edge computing
+
+Edge computing is computing that takes place at or near the physical location of either the user or the source of the data. By placing computing services closer to these locations, users benefit from faster, more reliable services while companies benefit from the flexibility of hybrid cloud computing. Edge computing is one way that a company can use and distribute a common pool of resources across a large number of locations.
+
+- Moving the data processing and storage closer to the user
+- CDN : Content Delivery Network
+
+- Pros:
+    - Speed/Latency
+    - Privacy
+    - Resiliency
+    - Scalability
+
+- Cons
+    - Resource Requirements
+    - Infrastructure Complexity
+    - Distribution of Security, Knowledge, etc
+
+# Cloud Computing Types
+
+## Private Cloud 
+
+- Built on the organization's own infrastructure
+
+## Public Cloud
+
+- Publicly available cloud infrastructure over internet like Azure, Google Cloud Plataform, Amazon Web Services and any more.
+
+## Hybrid Cloud
+
+- Mix of clouds, using public and private cloud for provide a better experience
+
+# Deployment Types 
+
+## Virtual Machines
+
+- Software defined machine
+
+## Bare Metal 
+
+- Refers to the physical computer components
+- VMs live inside it
+
+Hypervisor
+
+- Software that manages the virtual environments on the Bare Metal
+- eg: VMWare, VirtualBox, HiperV
+- Types:
+    - Type 1
+        - Directly on the Machine
+        - Enterprise grade
+        - No underlying os
+    - Type 2
+        - Runs inside a os
+        - eg: VMWare, VirtualBox
+
+## Containers
+
+- Another layer of abstraction above VMs
+- Isolated execution environments
+
+<div class='img-docker' align="center">
+    <img src="https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-appliction-blue-border_2.png" alt="Docker" width="500">
+</div>
+
+# CI/CD Pipeline
+
+## Continuous Integration(CI)
+
+
+## Continuous Delivery (CD)
