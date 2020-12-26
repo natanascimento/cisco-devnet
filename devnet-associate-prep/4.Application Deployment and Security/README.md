@@ -213,3 +213,37 @@ docker run -d -p 8501:8501 dockerfile
     - user, group, other
     - read write execute
 
+# DevOps Practices
+
+## Iterative and Incremental
+    - Why came into picture:
+        - Large set of changes;
+        - Long delay b/w development and deployment;
+        - Slow time to market;
+        - Zero work/life balance;
+    - Deliver faster and more reliably;
+    - Easier integration;
+    - Faster time to deployment;
+    - Human centric;
+
+## Continuous and Automated
+    - Continuous makes deployment routine;
+    - Automation makes automation reliable;
+
+## End to End Responsibility
+    - Organizational and functionality visibility;
+    - Brings different roles in an organizations together;
+    - Feedback and instrumentation;
+
+## Infrastructure as a Code:
+    - Infrastructure as a code (IaC) is an infrastructure management approach that makes continuous delivery and DevOps possible.
+
+## Containerization:
+    - Using containers to simulate exact environment.
+
+## Microservices:
+- The microservice architectural approach entails building one application as a set of independent services that communicate with each other, but are configured individually
+
+## Cloud Infrastructure
+- Using public cloud services to eliminate server-management operations.
+
