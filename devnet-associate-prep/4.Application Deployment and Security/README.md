@@ -46,7 +46,7 @@ Edge computing is computing that takes place at or near the physical location of
 Hypervisor
 
 - Software that manages the virtual environments on the Bare Metal
-- eg: VMWare, VirtualBox, HiperV
+- Ex: VMWare, VirtualBox, HiperV
 - Types:
     - Type 1
         - Directly on the Machine
@@ -54,9 +54,9 @@ Hypervisor
         - No underlying os
     - Type 2
         - Runs inside a os
-        - eg: VMWare, VirtualBox
+        - Ex: VMWare, VirtualBox
 
-## Containers
+## Containers 
 
 - Another layer of abstraction above VMs
 - Isolated execution environments
@@ -67,7 +67,183 @@ Hypervisor
 
 # CI/CD Pipeline
 
-## Continuous Integration(CI)
+## Continuous Integration (CI)
 
+- Provide automation for application deployment, using combination of code changes from multiples contributers based a single code
+
+- Components:
+    - Source Code Control:
+        - Version Control Management System like a Git; 
+    - Automated Build:
+        - Automatic Compilation;
+    - Unit Testing:
+        - Automating the testing of individual components of software;
+        - Test Driven Development;
+    - Branch Merging:
+        - Merging Branches;
+    - Integration Testing:
+        - How the individual components come together;
 
 ## Continuous Delivery (CD)
+
+- Automating the delivery of IT services to the users
+
+- Components:
+    - Central Repository
+        - Pushing the code into the centralized Repository
+    - System Testing
+        - How entire system is tested
+        - Code has access to all system resources it needs
+    - Deployment
+        - Environment cloning
+        - Infrastructure as code
+    - User-Acceptance Testing
+
+# Docker 
+
+Deploying Docker image in local developer environment
+
+```sh
+docker build -t dockerfile:version  => #building a container from Dockerfile
+
+docker images  => #show all docker images
+
+docker run -d -p 8501:8501 dockerfile  => #running container with params -d (detached) and -p (port forwarding (HOST_PORT:CONTAINER_PORT))
+
+docker ps -a  => #show informations about all containers
+
+docker stop <CONTAINER_ID>  => #stop container
+
+docker start <CONTAINER_ID>  => #start container
+
+docker pull <DOCKER_ID>  => #getting the image using Docker ID
+```
+
+For deploy example in ***"Interpret contents of a Dockerfile/"*** we can use:
+```sh
+docker build -t dockerfile:version
+docker run -d -p 8501:8501 dockerfile
+```
+
+# Application Security
+
+## Application security issues related to secret protection, encryption (storage and transport), and data handling
+
+### Data in transit:
+    - Use HTTPS, SFTP, SSH in place of HTTP, FTP, telnet;
+    - Securing data in transportation from source to destination;
+    - No clear text transmission;
+
+
+### Data in Rest:
+    - Files are encrypted;
+    - Database is encrypted;
+    - RAM purge correctly;
+    - Apps are auth correctly;
+    - using environment variables or .env Files;
+    - Disk encryption:
+        - Windows - bitlocker;
+        - MacOS - File Vault;
+        - Linux - Tomb;
+        - SQL server:
+            - Master Key;
+            - Slave Key;
+
+## Firewall, DNS, Load Balancers and Reverse Proxy importance
+
+### Firewall
+
+- Enforce a set of rules about which data packets are allowed to enter or leave a network 
+
+### DNS
+
+- Contains a database of public IP addresses and their associated hostnames and often resolves or translates those names to IP addresses, as requested
+
+### Load Balancers
+
+- Distributes network and application traffic across different servers
+
+### Reverse Proxy
+
+- Retrieves resources on behalf of a client from one or more servers, then returns resources to the client, this appearing as if originated from the service itself 
+
+## Top OSWAP Threats 
+
+- XSS (Cross Site Scripiting):
+    - Browser side script;
+    - Script can acess cookies, session tokens;
+
+- SQL Injections:
+    - Manipulation of SQL Commands; 
+
+- CSRF (Cross Site Request Forgery):
+    - Request from remote user;
+
+# Bash Commands 
+
+## File/Directory management:
+
+    - rm (Remove File);
+        - rm -rf (Remove Directory);
+    - cp (Copy File);
+        - cp -r (Copy Directory); 
+    - mv (Move File/Directory);
+    - touch (Create File);
+    - nano (Edit file);
+    - cat (Read file);
+    - vi (Edit file);
+    - mkdir (Create a Directory);
+
+## Directory Navigation:
+
+    - cd (Change directory);
+        - cd~ (Change directory to user $HOME);
+        - cd/ (Change directory to file system root);
+    - ls (List a directory);
+        - ls -l (List files in directory with details);
+        - ls -t (List files in directory sorted by edited date descending);
+    - pwd (Visualize current directory);
+
+## Environmental Variables:
+
+    - $HOME (Home folder)
+    - export (Create environment variable)
+
+## Permissions:
+    - user, group, other
+    - read write execute
+
+# DevOps Practices
+
+## Iterative and Incremental
+    - Why came into picture:
+        - Large set of changes;
+        - Long delay b/w development and deployment;
+        - Slow time to market;
+        - Zero work/life balance;
+    - Deliver faster and more reliably;
+    - Easier integration;
+    - Faster time to deployment;
+    - Human centric;
+
+## Continuous and Automated
+    - Continuous makes deployment routine;
+    - Automation makes automation reliable;
+
+## End to End Responsibility
+    - Organizational and functionality visibility;
+    - Brings different roles in an organizations together;
+    - Feedback and instrumentation;
+
+## Infrastructure as a Code:
+    - Infrastructure as a code (IaC) is an infrastructure management approach that makes continuous delivery and DevOps possible.
+
+## Containerization:
+    - Using containers to simulate exact environment.
+
+## Microservices:
+- The microservice architectural approach entails building one application as a set of independent services that communicate with each other, but are configured individually
+
+## Cloud Infrastructure
+- Using public cloud services to eliminate server-management operations.
+
