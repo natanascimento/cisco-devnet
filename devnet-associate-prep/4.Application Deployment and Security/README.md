@@ -99,3 +99,29 @@ Hypervisor
         - Infrastructure as code
     - User-Acceptance Testing
 
+# Docker 
+
+Deploying Docker image in local developer environment
+
+```sh
+docker build -t dockerfile:version  => #building a container from Dockerfile
+
+docker images  => #show all docker images
+
+docker run -d -p 8501:8501 dockerfile  => #running container with params -d (detached) and -p (port forwarding (HOST_PORT:CONTAINER_PORT))
+
+docker ps -a  => #show informations about all containers
+
+docker stop <CONTAINER_ID>  => #stop container
+
+docker start <CONTAINER_ID>  => #start container
+
+docker pull <DOCKER_ID>  => #getting the image using Docker ID
+```
+
+For deploy example in ***"Interpret contents of a Dockerfile/"*** we can use:
+```sh
+docker build -t dockerfile:version
+docker run -d -p 8501:8501 dockerfile
+```
+
