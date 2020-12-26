@@ -179,3 +179,37 @@ docker run -d -p 8501:8501 dockerfile
 - CSRF (Cross Site Request Forgery):
     - Request from remote user;
 
+# Bash Commands 
+
+## File/Directory management:
+
+    - rm (Remove File);
+        - rm -rf (Remove Directory);
+    - cp (Copy File);
+        - cp -r (Copy Directory); 
+    - mv (Move File/Directory);
+    - touch (Create File);
+    - nano (Edit file);
+    - cat (Read file);
+    - vi (Edit file);
+    - mkdir (Create a Directory);
+
+## Directory Navigation:
+
+    - cd (Change directory);
+        - cd~ (Change directory to user $HOME);
+        - cd/ (Change directory to file system root);
+    - ls (List a directory);
+        - ls -l (List files in directory with details);
+        - ls -t (List files in directory sorted by edited date descending);
+    - pwd (Visualize current directory);
+
+## Environmental Variables:
+
+    - $HOME (Home folder)
+    - export (Create environment variable)
+
+## Permissions:
+    - user, group, other
+    - read write execute
+
