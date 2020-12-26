@@ -125,3 +125,57 @@ docker build -t dockerfile:version
 docker run -d -p 8501:8501 dockerfile
 ```
 
+# Application Security
+
+## Application security issues related to secret protection, encryption (storage and transport), and data handling
+
+### Data in transit:
+    - Use HTTPS, SFTP, SSH in place of HTTP, FTP, telnet;
+    - Securing data in transportation from source to destination;
+    - No clear text transmission;
+
+
+### Data in Rest:
+    - Files are encrypted;
+    - Database is encrypted;
+    - RAM purge correctly;
+    - Apps are auth correctly;
+    - using environment variables or .env Files;
+    - Disk encryption:
+        - Windows - bitlocker;
+        - MacOS - File Vault;
+        - Linux - Tomb;
+        - SQL server:
+            - Master Key;
+            - Slave Key;
+
+## Firewall, DNS, Load Balancers and Reverse Proxy importance
+
+### Firewall
+
+- Enforce a set of rules about which data packets are allowed to enter or leave a network 
+
+### DNS
+
+- Contains a database of public IP addresses and their associated hostnames and often resolves or translates those names to IP addresses, as requested
+
+### Load Balancers
+
+- Distributes network and application traffic across different servers
+
+### Reverse Proxy
+
+- Retrieves resources on behalf of a client from one or more servers, then returns resources to the client, this appearing as if originated from the service itself 
+
+## Top OSWAP Threats 
+
+- XSS (Cross Site Scripiting):
+    - Browser side script;
+    - Script can acess cookies, session tokens;
+
+- SQL Injections:
+    - Manipulation of SQL Commands; 
+
+- CSRF (Cross Site Request Forgery):
+    - Request from remote user;
+
