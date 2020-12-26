@@ -46,7 +46,7 @@ Edge computing is computing that takes place at or near the physical location of
 Hypervisor
 
 - Software that manages the virtual environments on the Bare Metal
-- eg: VMWare, VirtualBox, HiperV
+- Ex: VMWare, VirtualBox, HiperV
 - Types:
     - Type 1
         - Directly on the Machine
@@ -54,9 +54,9 @@ Hypervisor
         - No underlying os
     - Type 2
         - Runs inside a os
-        - eg: VMWare, VirtualBox
+        - Ex: VMWare, VirtualBox
 
-## Containers
+## Containers 
 
 - Another layer of abstraction above VMs
 - Isolated execution environments
@@ -67,7 +67,35 @@ Hypervisor
 
 # CI/CD Pipeline
 
-## Continuous Integration(CI)
+## Continuous Integration (CI)
 
+- Provide automation for application deployment, using combination of code changes from multiples contributers based a single code
+
+- Components:
+    - Source Code Control:
+        - Version Control Management System like a Git; 
+    - Automated Build:
+        - Automatic Compilation;
+    - Unit Testing:
+        - Automating the testing of individual components of software;
+        - Test Driven Development;
+    - Branch Merging:
+        - Merging Branches;
+    - Integration Testing:
+        - How the individual components come together;
 
 ## Continuous Delivery (CD)
+
+- Automating the delivery of IT services to the users
+
+- Components:
+    - Central Repository
+        - Pushing the code into the centralized Repository
+    - System Testing
+        - How entire system is tested
+        - Code has access to all system resources it needs
+    - Deployment
+        - Environment cloning
+        - Infrastructure as code
+    - User-Acceptance Testing
+
